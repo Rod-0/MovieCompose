@@ -27,7 +27,7 @@ fun MovieList(movies: List<Movie> = emptyList()) {
 fun MovieItem(movie: Movie) {
     Row {
         GlideImage(
-            imageModel = { movie.urlImage },
+            imageModel = { "https://image.tmdb.org/t/p/original${movie.urlImage}" },
             imageOptions = ImageOptions(contentScale = ContentScale.FillWidth),
             modifier = Modifier.weight(1f)
         )
